@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Regular.otf">
+            <string>SFProText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="161" id="KGk-i7-Jjw" customClass="PaymentRightCell" customModule="Smartility" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="161"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="161"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sPd-x5-xrA">
+                        <rect key="frame" x="41.5" y="0.0" width="262.5" height="100"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SJO-IJ-RLV">
+                                <rect key="frame" x="0.0" y="0.0" width="6" height="100"/>
+                                <color key="backgroundColor" red="0.15294117647058825" green="0.68235294117647061" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="6" id="oai-5Z-m3a"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Opening Balance (NEFT/IMPS/RTGS)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t1g-Tq-fDB">
+                                <rect key="frame" x="16" y="10" width="189" height="13.5"/>
+                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="11"/>
+                                <color key="textColor" red="0.50980392159999999" green="0.50980392159999999" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12-10-2021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kuk-TX-h4p">
+                                <rect key="frame" x="193" y="37.5" width="59.5" height="13.5"/>
+                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="11"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$56684,47" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5lb-dP-PxD">
+                                <rect key="frame" x="16" y="67" width="105" height="24"/>
+                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#IGBHD2874" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ile-7j-gRv">
+                                <rect key="frame" x="16" y="37" width="92.5" height="18"/>
+                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="15"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pending" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qc0-Xj-6q9">
+                                <rect key="frame" x="210" y="10" width="42.5" height="13.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42.5" id="CGk-6N-888"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="11"/>
+                                <color key="textColor" red="0.92156862745098034" green="0.3411764705882353" blue="0.3411764705882353" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i61-K3-pVw">
+                                <rect key="frame" x="228.5" y="66" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="TIg-bH-WrS"/>
+                                    <constraint firstAttribute="width" constant="24" id="ds6-me-vIt"/>
+                                </constraints>
+                                <state key="normal" image="editeNew"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Qc0-Xj-6q9" secondAttribute="trailing" constant="10" id="53Z-Nx-bgt"/>
+                            <constraint firstItem="SJO-IJ-RLV" firstAttribute="leading" secondItem="sPd-x5-xrA" secondAttribute="leading" id="5zk-Gp-wJS"/>
+                            <constraint firstItem="5lb-dP-PxD" firstAttribute="leading" secondItem="SJO-IJ-RLV" secondAttribute="trailing" constant="10" id="7fa-ev-qad"/>
+                            <constraint firstAttribute="trailing" secondItem="kuk-TX-h4p" secondAttribute="trailing" constant="10" id="9by-rF-Lub"/>
+                            <constraint firstItem="Ile-7j-gRv" firstAttribute="leading" secondItem="SJO-IJ-RLV" secondAttribute="trailing" constant="10" id="DNQ-If-b9H"/>
+                            <constraint firstItem="Qc0-Xj-6q9" firstAttribute="leading" secondItem="t1g-Tq-fDB" secondAttribute="trailing" constant="5" id="dPK-gE-Afb"/>
+                            <constraint firstItem="Qc0-Xj-6q9" firstAttribute="top" secondItem="sPd-x5-xrA" secondAttribute="top" constant="10" id="ex7-jI-Dv8"/>
+                            <constraint firstItem="SJO-IJ-RLV" firstAttribute="top" secondItem="sPd-x5-xrA" secondAttribute="top" id="g6v-Ky-Wuo"/>
+                            <constraint firstItem="Ile-7j-gRv" firstAttribute="top" secondItem="sPd-x5-xrA" secondAttribute="top" constant="37" id="gZK-5r-hpe"/>
+                            <constraint firstItem="t1g-Tq-fDB" firstAttribute="leading" secondItem="SJO-IJ-RLV" secondAttribute="trailing" constant="10" id="hvt-4L-jL0"/>
+                            <constraint firstItem="5lb-dP-PxD" firstAttribute="top" secondItem="Ile-7j-gRv" secondAttribute="bottom" constant="12" id="oWP-Dx-2lN"/>
+                            <constraint firstAttribute="trailing" secondItem="i61-K3-pVw" secondAttribute="trailing" constant="10" id="ohj-eR-5kW"/>
+                            <constraint firstItem="t1g-Tq-fDB" firstAttribute="top" secondItem="sPd-x5-xrA" secondAttribute="top" constant="10" id="omf-qc-Kj9"/>
+                            <constraint firstAttribute="height" constant="100" id="p2h-id-PVO"/>
+                            <constraint firstAttribute="bottom" secondItem="SJO-IJ-RLV" secondAttribute="bottom" id="pet-Du-2eE"/>
+                            <constraint firstItem="kuk-TX-h4p" firstAttribute="top" secondItem="t1g-Tq-fDB" secondAttribute="bottom" constant="14" id="wV3-iL-2FV"/>
+                            <constraint firstAttribute="bottom" secondItem="i61-K3-pVw" secondAttribute="bottom" constant="10" id="zuV-jy-BjA"/>
+                        </constraints>
+                    </view>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="hLC-Ka-89S">
+                        <rect key="frame" x="2.5" y="40" width="20" height="20"/>
+                    </activityIndicatorView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="sPd-x5-xrA" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="0xS-6q-Cb1"/>
+                    <constraint firstItem="sPd-x5-xrA" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="P55-kx-4UV"/>
+                    <constraint firstItem="hLC-Ka-89S" firstAttribute="centerY" secondItem="sPd-x5-xrA" secondAttribute="centerY" id="Sht-1n-JEb"/>
+                    <constraint firstItem="sPd-x5-xrA" firstAttribute="leading" secondItem="hLC-Ka-89S" secondAttribute="trailing" constant="19" id="kiS-zr-Y6y"/>
+                    <constraint firstItem="sPd-x5-xrA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="q9Z-Rl-ixh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="activityIndicator" destination="hLC-Ka-89S" id="SXr-1j-vFA"/>
+                <outlet property="edieBtn" destination="i61-K3-pVw" id="TEh-e7-PQW"/>
+                <outlet property="paymentAmount" destination="5lb-dP-PxD" id="WKh-PX-IUp"/>
+                <outlet property="paymentDate" destination="kuk-TX-h4p" id="4TF-LX-ytR"/>
+                <outlet property="paymentLabel" destination="Qc0-Xj-6q9" id="Nat-89-hCz"/>
+                <outlet property="paymentNo" destination="Ile-7j-gRv" id="HrM-gL-Rh3"/>
+                <outlet property="paymentTitle" destination="t1g-Tq-fDB" id="y2Z-DP-ULf"/>
+                <outlet property="viewContainer" destination="sPd-x5-xrA" id="zJF-rm-4YN"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="136.94196428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="editeNew" width="512" height="512"/>
+    </resources>
+</document>

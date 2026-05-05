@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Regular.otf">
+            <string>SFProText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="invoicePaymentCell" id="KGk-i7-Jjw" customClass="invoicePaymentCell" customModule="Smartility" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkBox" translatesAutoresizingMaskIntoConstraints="NO" id="4LT-in-9Z0">
+                        <rect key="frame" x="0.0" y="17" width="10" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="10" id="iBj-uf-2sE"/>
+                            <constraint firstAttribute="height" constant="10" id="wYv-qv-P8R"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="paid" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KTS-pG-LaY">
+                        <rect key="frame" x="20" y="0.0" width="265" height="44"/>
+                        <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o6m-XS-dqY">
+                        <rect key="frame" x="285" y="10" width="30" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="S3L-Ds-sxP"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <state key="normal" title="Edit">
+                            <color key="titleColor" red="0.92156862750000001" green="0.3411764706" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="o6m-XS-dqY" firstAttribute="leading" secondItem="KTS-pG-LaY" secondAttribute="trailing" id="3m8-vT-jcl"/>
+                    <constraint firstAttribute="bottom" secondItem="KTS-pG-LaY" secondAttribute="bottom" id="6FC-oc-Nzw"/>
+                    <constraint firstAttribute="trailing" secondItem="o6m-XS-dqY" secondAttribute="trailing" constant="5" id="NVS-1z-ULA"/>
+                    <constraint firstItem="KTS-pG-LaY" firstAttribute="centerY" secondItem="4LT-in-9Z0" secondAttribute="centerY" id="QaK-Ax-Jre"/>
+                    <constraint firstItem="4LT-in-9Z0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Tar-xd-IpJ"/>
+                    <constraint firstItem="KTS-pG-LaY" firstAttribute="leading" secondItem="4LT-in-9Z0" secondAttribute="trailing" constant="10" id="dwr-TZ-4md"/>
+                    <constraint firstItem="o6m-XS-dqY" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ir4-St-Rq8"/>
+                    <constraint firstItem="KTS-pG-LaY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="tTB-BU-g3x"/>
+                    <constraint firstItem="4LT-in-9Z0" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="xue-1r-SAX"/>
+                    <constraint firstItem="KTS-pG-LaY" firstAttribute="leading" secondItem="4LT-in-9Z0" secondAttribute="trailing" constant="10" id="z1c-TA-eXd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="editeBtn" destination="o6m-XS-dqY" id="2Yd-0Y-d7a"/>
+                <outlet property="paidDescLabel" destination="KTS-pG-LaY" id="Yer-Ls-Tow"/>
+                <outlet property="paidImageView" destination="4LT-in-9Z0" id="zBv-Jp-cVl"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="98.4375"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="checkBox" width="512" height="512"/>
+    </resources>
+</document>

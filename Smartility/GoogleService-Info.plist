@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>758262939592-0b5gtqahnpc2kae1pof5vausfr75t3ld.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.758262939592-0b5gtqahnpc2kae1pof5vausfr75t3ld</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>758262939592-77h06efpa2pg5r55qlp3gncs8l4vbm3l.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDcUV60LGxiDlJUZIUUOsWZ6vQi30gEL98</string>
+	<key>GCM_SENDER_ID</key>
+	<string>758262939592</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Smartility.uts.ios</string>
+	<key>PROJECT_ID</key>
+	<string>smartility-uts</string>
+	<key>STORAGE_BUCKET</key>
+	<string>smartility-uts.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:758262939592:ios:e4b43719732db4746f8afd</string>
+	<key>DATABASE_URL</key>
+	<string>https://smartility-uts.firebaseio.com</string>
+</dict>
+</plist>

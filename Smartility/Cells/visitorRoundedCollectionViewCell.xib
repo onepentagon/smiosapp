@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="visitorRoundedCollectionViewCell" id="gTV-IL-0wX" customClass="visitorRoundedCollectionViewCell" customModule="Smartility" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="140" height="116"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="140" height="116"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TGr-ZK-Q7O">
+                        <rect key="frame" x="0.0" y="0.0" width="140" height="116"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tempiconImg" translatesAutoresizingMaskIntoConstraints="NO" id="qVd-8y-C5t">
+                                <rect key="frame" x="5" y="5" width="130" height="106"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qVd-8y-C5t" firstAttribute="top" secondItem="TGr-ZK-Q7O" secondAttribute="top" constant="5" id="XuE-uu-2cV"/>
+                            <constraint firstAttribute="bottom" secondItem="qVd-8y-C5t" secondAttribute="bottom" constant="5" id="Y21-3o-vdY"/>
+                            <constraint firstItem="qVd-8y-C5t" firstAttribute="leading" secondItem="TGr-ZK-Q7O" secondAttribute="leading" constant="5" id="lmE-q8-97c"/>
+                            <constraint firstAttribute="trailing" secondItem="qVd-8y-C5t" secondAttribute="trailing" constant="5" id="q1b-pm-LYw"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="TGr-ZK-Q7O" secondAttribute="bottom" id="Mbc-80-MWo"/>
+                <constraint firstItem="TGr-ZK-Q7O" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="S86-Na-ReZ"/>
+                <constraint firstItem="TGr-ZK-Q7O" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="TFp-Bl-cR8"/>
+                <constraint firstAttribute="trailing" secondItem="TGr-ZK-Q7O" secondAttribute="trailing" id="vOe-97-hd6"/>
+            </constraints>
+            <size key="customSize" width="140" height="116"/>
+            <connections>
+                <outlet property="imageViewRounded" destination="qVd-8y-C5t" id="yCC-Yr-9Qg"/>
+                <outlet property="roundedBgView" destination="TGr-ZK-Q7O" id="GlH-XA-R2H"/>
+            </connections>
+            <point key="canvasLocation" x="-90" y="149"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="tempiconImg" width="900" height="600"/>
+    </resources>
+</document>

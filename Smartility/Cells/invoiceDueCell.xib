@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Regular.otf">
+            <string>SFProText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="invoiceDueCell" rowHeight="-99" id="KGk-i7-Jjw" customClass="invoiceDueCell" customModule="Smartility" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="337" height="46"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="337" height="46"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lZR-i9-A2Q">
+                        <rect key="frame" x="298.5" y="10" width="38.5" height="18"/>
+                        <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" ambiguous="YES" text="mebnrg ergj" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H7M-E3-ZI3">
+                        <rect key="frame" x="0.0" y="5" width="253" height="18"/>
+                        <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wCA-Ru-wGL">
+                        <rect key="frame" x="0.0" y="27" width="253" height="13.5"/>
+                        <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="H7M-E3-ZI3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="1uC-s4-WMU"/>
+                    <constraint firstAttribute="bottom" secondItem="wCA-Ru-wGL" secondAttribute="bottom" id="52p-b6-Czr"/>
+                    <constraint firstItem="lZR-i9-A2Q" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="EmI-ry-xqe"/>
+                    <constraint firstAttribute="trailing" secondItem="lZR-i9-A2Q" secondAttribute="trailing" id="QkU-2g-1ZX"/>
+                    <constraint firstItem="wCA-Ru-wGL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="SVo-XP-VXh"/>
+                    <constraint firstItem="H7M-E3-ZI3" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.75" id="ad0-cx-ZAw"/>
+                    <constraint firstItem="wCA-Ru-wGL" firstAttribute="trailing" secondItem="H7M-E3-ZI3" secondAttribute="trailing" id="bPV-o8-NmM"/>
+                    <constraint firstItem="H7M-E3-ZI3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="cwV-JP-HLB"/>
+                    <constraint firstItem="wCA-Ru-wGL" firstAttribute="top" secondItem="H7M-E3-ZI3" secondAttribute="bottom" constant="4" id="f8F-ut-wT5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dueAmount" destination="lZR-i9-A2Q" id="n13-kz-d3J"/>
+                <outlet property="dueDesc" destination="wCA-Ru-wGL" id="ftL-ab-zeu"/>
+                <outlet property="dueTitleLabel" destination="H7M-E3-ZI3" id="5fG-zp-fIJ"/>
+            </connections>
+            <point key="canvasLocation" x="145.6521739130435" y="145.98214285714286"/>
+        </tableViewCell>
+    </objects>
+</document>

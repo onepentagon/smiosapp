@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Semibold.otf">
+            <string>SFProText-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CommunityDropDown" customModule="Smartility" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HGF-PE-pTM">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="48"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SELECT YOUR COMMUNITY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mZJ-nO-avv">
+                            <rect key="frame" x="20" y="15.5" width="192" height="17"/>
+                            <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="14"/>
+                            <color key="textColor" red="0.3294117647" green="0.27058823529999998" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.8784313725490196" green="0.8784313725490196" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="mZJ-nO-avv" firstAttribute="leading" secondItem="HGF-PE-pTM" secondAttribute="leading" constant="20" id="1zp-nb-J9M"/>
+                        <constraint firstItem="mZJ-nO-avv" firstAttribute="centerY" secondItem="HGF-PE-pTM" secondAttribute="centerY" id="LRD-AB-7zg"/>
+                        <constraint firstAttribute="height" constant="48" id="kkY-zm-jfP"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="R82-RA-2aC">
+                    <rect key="frame" x="0.0" y="48" width="414" height="848"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="R82-RA-2aC" firstAttribute="top" secondItem="HGF-PE-pTM" secondAttribute="bottom" id="2ky-ZW-yY5"/>
+                <constraint firstItem="HGF-PE-pTM" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Rir-dL-aGf"/>
+                <constraint firstItem="HGF-PE-pTM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="T6O-6y-98W"/>
+                <constraint firstItem="HGF-PE-pTM" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="VGl-dh-nXI"/>
+                <constraint firstItem="R82-RA-2aC" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="d45-BL-00d"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="R82-RA-2aC" secondAttribute="trailing" id="e8A-ZB-Iuf"/>
+                <constraint firstAttribute="bottom" secondItem="R82-RA-2aC" secondAttribute="bottom" id="iyQ-ru-J4a"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="communityTable" destination="R82-RA-2aC" id="Quc-tH-WJQ"/>
+            </connections>
+            <point key="canvasLocation" x="-249.27536231884059" y="78.348214285714278"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

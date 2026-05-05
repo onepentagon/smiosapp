@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Regular.otf">
+            <string>SFProText-Regular</string>
+        </array>
+        <array key="SF-Pro-Text-Semibold.otf">
+            <string>SFProText-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" ambiguous="YES" id="iN0-l3-epB" customClass="PaymentShapView" customModule="Smartility" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="442"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W5a-UA-neG" customClass="maintanaceShapView" customModule="Smartility" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CheckBoxReceipt" translatesAutoresizingMaskIntoConstraints="NO" id="6zC-kn-YLe">
+                            <rect key="frame" x="20" y="10" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="HOM-pQ-AmV"/>
+                                <constraint firstAttribute="width" constant="20" id="z4I-vJ-Bvt"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Receipt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rT7-zk-t0f">
+                            <rect key="frame" x="50" y="11.5" width="52.5" height="17"/>
+                            <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pending Receipt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="31U-3k-yqO">
+                            <rect key="frame" x="296.5" y="11.5" width="107.5" height="17"/>
+                            <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="14"/>
+                            <color key="textColor" red="0.93333333333333335" green="0.33333333333333331" blue="0.18431372549019609" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.8784313725490196" green="0.8784313725490196" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="6zC-kn-YLe" firstAttribute="leading" secondItem="W5a-UA-neG" secondAttribute="leading" constant="20" id="0Bk-WT-5Ym"/>
+                        <constraint firstAttribute="trailing" secondItem="31U-3k-yqO" secondAttribute="trailing" constant="10" id="29o-GX-gbb"/>
+                        <constraint firstItem="6zC-kn-YLe" firstAttribute="centerY" secondItem="W5a-UA-neG" secondAttribute="centerY" id="Fjf-Ng-tDF"/>
+                        <constraint firstItem="rT7-zk-t0f" firstAttribute="centerY" secondItem="6zC-kn-YLe" secondAttribute="centerY" id="Vsc-VF-Jc3"/>
+                        <constraint firstItem="31U-3k-yqO" firstAttribute="centerY" secondItem="W5a-UA-neG" secondAttribute="centerY" id="jqY-NF-kLF"/>
+                        <constraint firstAttribute="height" constant="40" id="pzf-72-duh"/>
+                        <constraint firstItem="rT7-zk-t0f" firstAttribute="leading" secondItem="6zC-kn-YLe" secondAttribute="trailing" constant="10" id="zKx-8K-GpU"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Receipt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3E3-Sy-2SB">
+                    <rect key="frame" x="19" y="45" width="50.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Receipt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KZG-uk-SXR">
+                    <rect key="frame" x="19" y="67" width="36" height="12"/>
+                    <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="10"/>
+                    <color key="textColor" red="0.30980392156862746" green="0.30980392156862746" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paid By" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ovg-l0-fR3">
+                    <rect key="frame" x="19" y="94" width="35" height="12"/>
+                    <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="10"/>
+                    <color key="textColor" red="0.74117647058823533" green="0.74117647058823533" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Receipt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lLX-7U-zwd">
+                    <rect key="frame" x="19" y="106" width="50.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment Mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DwV-4v-uII">
+                    <rect key="frame" x="274.5" y="94" width="70.5" height="12"/>
+                    <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="10"/>
+                    <color key="textColor" red="0.74117647060000003" green="0.74117647060000003" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Receipt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tml-zT-Hkl">
+                    <rect key="frame" x="274.5" y="106" width="50.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trans. Ref. No" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2uM-UQ-VbK">
+                    <rect key="frame" x="19" y="134" width="66.5" height="12"/>
+                    <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="10"/>
+                    <color key="textColor" red="0.74117647060000003" green="0.74117647060000003" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Receipt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TZR-8P-X8v">
+                    <rect key="frame" x="19" y="146" width="50.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PaymentNotesImage" translatesAutoresizingMaskIntoConstraints="NO" id="XnB-ta-g4R">
+                    <rect key="frame" x="19" y="176" width="10" height="10"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="10" id="PS2-Qj-Z2T"/>
+                        <constraint firstAttribute="height" constant="10" id="kpM-xZ-odp"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trans. Ref. No" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yQp-pm-B5g">
+                    <rect key="frame" x="37" y="175" width="66.5" height="12"/>
+                    <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="10"/>
+                    <color key="textColor" red="0.30980392156862746" green="0.30980392156862746" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nSU-mK-lrC">
+                    <rect key="frame" x="19" y="240" width="109.5" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="17" id="cfk-v6-bTJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                    <color key="textColor" red="0.30980392156862746" green="0.30980392156862746" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TzZ-bb-rqt">
+                    <rect key="frame" x="19" y="262" width="375" height="0.0"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" id="Gg1-bI-lXi"/>
+                    </constraints>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cRW-EH-vJL">
+                    <rect key="frame" x="117" y="282" width="180" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="180" id="CBj-ZD-2Qv"/>
+                        <constraint firstAttribute="height" constant="48" id="Sv5-eW-jMh"/>
+                    </constraints>
+                    <state key="normal" title="Download Receipt"/>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Ovg-l0-fR3" firstAttribute="leading" secondItem="KZG-uk-SXR" secondAttribute="leading" id="1WB-9X-hDP"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="DwV-4v-uII" secondAttribute="trailing" constant="69" id="1dV-WB-L8e"/>
+                <constraint firstItem="W5a-UA-neG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="2js-j9-ALy"/>
+                <constraint firstItem="KZG-uk-SXR" firstAttribute="leading" secondItem="3E3-Sy-2SB" secondAttribute="leading" id="4QE-Ej-Jw3"/>
+                <constraint firstItem="XnB-ta-g4R" firstAttribute="leading" secondItem="TZR-8P-X8v" secondAttribute="leading" id="5HN-DD-fMb"/>
+                <constraint firstItem="3E3-Sy-2SB" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="19" id="5iD-Bt-Lbl"/>
+                <constraint firstItem="3E3-Sy-2SB" firstAttribute="top" secondItem="W5a-UA-neG" secondAttribute="bottom" constant="5" id="B39-gk-t0T"/>
+                <constraint firstItem="TZR-8P-X8v" firstAttribute="leading" secondItem="2uM-UQ-VbK" secondAttribute="leading" id="Dzw-yM-9Tx"/>
+                <constraint firstItem="Ovg-l0-fR3" firstAttribute="top" secondItem="KZG-uk-SXR" secondAttribute="bottom" constant="15" id="Eup-9i-4mq"/>
+                <constraint firstItem="XnB-ta-g4R" firstAttribute="top" secondItem="TZR-8P-X8v" secondAttribute="bottom" constant="13" id="IxT-i4-YmM"/>
+                <constraint firstItem="2uM-UQ-VbK" firstAttribute="top" secondItem="lLX-7U-zwd" secondAttribute="bottom" constant="11" id="KR6-2o-IgG"/>
+                <constraint firstItem="nSU-mK-lrC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="240" id="Kbf-xo-eEg"/>
+                <constraint firstItem="yQp-pm-B5g" firstAttribute="leading" secondItem="XnB-ta-g4R" secondAttribute="trailing" constant="8.1899999999999995" id="Kyu-Tu-teR"/>
+                <constraint firstItem="W5a-UA-neG" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Lv7-pY-dKq"/>
+                <constraint firstItem="yQp-pm-B5g" firstAttribute="centerY" secondItem="XnB-ta-g4R" secondAttribute="centerY" id="T6V-ty-SKi"/>
+                <constraint firstItem="KZG-uk-SXR" firstAttribute="top" secondItem="3E3-Sy-2SB" secondAttribute="bottom" constant="5" id="U51-FU-eDD"/>
+                <constraint firstItem="nSU-mK-lrC" firstAttribute="leading" secondItem="TZR-8P-X8v" secondAttribute="leading" id="UDf-3b-lgj"/>
+                <constraint firstItem="lLX-7U-zwd" firstAttribute="leading" secondItem="Ovg-l0-fR3" secondAttribute="leading" id="Xle-IT-xVi"/>
+                <constraint firstItem="cRW-EH-vJL" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="Yi0-F6-cMD"/>
+                <constraint firstItem="Tml-zT-Hkl" firstAttribute="leading" secondItem="DwV-4v-uII" secondAttribute="leading" id="eTr-jd-kL9"/>
+                <constraint firstItem="TzZ-bb-rqt" firstAttribute="leading" secondItem="nSU-mK-lrC" secondAttribute="leading" id="m2h-I6-JcT"/>
+                <constraint firstAttribute="bottom" secondItem="cRW-EH-vJL" secondAttribute="bottom" constant="26" id="mX9-X2-6PG"/>
+                <constraint firstItem="2uM-UQ-VbK" firstAttribute="leading" secondItem="lLX-7U-zwd" secondAttribute="leading" id="oU8-tQ-vWl"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="TzZ-bb-rqt" secondAttribute="trailing" constant="20" id="qBG-Dq-IBT"/>
+                <constraint firstItem="TZR-8P-X8v" firstAttribute="top" secondItem="2uM-UQ-VbK" secondAttribute="bottom" id="qFi-Yg-fuV"/>
+                <constraint firstItem="DwV-4v-uII" firstAttribute="centerY" secondItem="Ovg-l0-fR3" secondAttribute="centerY" id="siB-md-HSU"/>
+                <constraint firstItem="Tml-zT-Hkl" firstAttribute="top" secondItem="DwV-4v-uII" secondAttribute="bottom" id="tFB-zb-cQ0"/>
+                <constraint firstItem="W5a-UA-neG" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="tGw-AJ-4vy"/>
+                <constraint firstItem="cRW-EH-vJL" firstAttribute="top" secondItem="TzZ-bb-rqt" secondAttribute="bottom" constant="20" id="vta-73-8cU"/>
+                <constraint firstItem="TzZ-bb-rqt" firstAttribute="top" secondItem="nSU-mK-lrC" secondAttribute="bottom" constant="5" id="xYh-Cf-Gxb"/>
+                <constraint firstItem="lLX-7U-zwd" firstAttribute="top" secondItem="Ovg-l0-fR3" secondAttribute="bottom" id="xxH-TG-1Fm"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="downloadReceipt" destination="cRW-EH-vJL" id="Fuz-NW-aFL"/>
+                <outlet property="downloadReceiptBottomConstraint" destination="mX9-X2-6PG" id="OST-to-6g3"/>
+                <outlet property="downloadReceiptHeight" destination="Sv5-eW-jMh" id="3y9-Gi-Fz6"/>
+                <outlet property="iconDesc" destination="XnB-ta-g4R" id="b9H-e2-vGO"/>
+                <outlet property="paidByName" destination="lLX-7U-zwd" id="tlf-tH-47W"/>
+                <outlet property="paidMode" destination="Tml-zT-Hkl" id="qgV-HX-nxm"/>
+                <outlet property="paymentDesc" destination="yQp-pm-B5g" id="yf8-dp-hIs"/>
+                <outlet property="pendingReceiptLabel" destination="31U-3k-yqO" id="5cC-2v-7l4"/>
+                <outlet property="receiptAmount" destination="3E3-Sy-2SB" id="PFJ-Jn-YDl"/>
+                <outlet property="receiptDateFromTO" destination="KZG-uk-SXR" id="dj0-4g-Pe5"/>
+                <outlet property="receiptTable" destination="TzZ-bb-rqt" id="GaU-qU-xsE"/>
+                <outlet property="receiptTitle" destination="rT7-zk-t0f" id="6Es-HN-6rh"/>
+                <outlet property="tableHeight" destination="Gg1-bI-lXi" id="kSK-RX-T90"/>
+                <outlet property="transferNo" destination="TZR-8P-X8v" id="UJ3-qC-uUK"/>
+            </connections>
+            <point key="canvasLocation" x="47.826086956521742" y="-342.1875"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="CheckBoxReceipt" width="512" height="512"/>
+        <image name="PaymentNotesImage" width="512" height="512"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

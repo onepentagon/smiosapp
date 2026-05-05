@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Semibold.otf">
+            <string>SFProText-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="UpdateAppView" customModule="Smartility" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="375"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Version Available" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eaO-k8-PyN">
+                    <rect key="frame" x="105" y="64" width="204" height="24"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                    <color key="textColor" red="0.32941176470588235" green="0.27058823529411763" blue="0.82745098039215681" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We care for you" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="deK-Ox-hUS">
+                    <rect key="frame" x="158" y="108" width="98" height="17"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2EV-zV-SLy">
+                    <rect key="frame" x="51" y="145" width="312" height="33"/>
+                    <string key="text">Please update the app and enjoy the
+seamless functionality of our app</string>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                    <color key="textColor" red="0.50980392156862742" green="0.50980392156862742" blue="0.50980392156862742" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FqE-5G-vRp">
+                    <rect key="frame" x="103.5" y="208" width="207" height="48"/>
+                    <color key="backgroundColor" red="0.3294117647" green="0.27058823529999998" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="0fx-z5-8sA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="16"/>
+                    <state key="normal" title="Update Now">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TuN-bA-G1w">
+                    <rect key="frame" x="103.5" y="268" width="207" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="soc-V4-IaB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="16"/>
+                    <state key="normal" title="NOT NOW"/>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="eaO-k8-PyN" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="4RC-lO-F3r"/>
+                <constraint firstItem="deK-Ox-hUS" firstAttribute="centerX" secondItem="eaO-k8-PyN" secondAttribute="centerX" id="70z-re-6UN"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="2EV-zV-SLy" secondAttribute="trailing" constant="51" id="7ae-zr-L5w"/>
+                <constraint firstItem="2EV-zV-SLy" firstAttribute="centerX" secondItem="deK-Ox-hUS" secondAttribute="centerX" id="BOk-zJ-f0Z"/>
+                <constraint firstItem="TuN-bA-G1w" firstAttribute="leading" secondItem="FqE-5G-vRp" secondAttribute="leading" id="FIj-mV-9Ik"/>
+                <constraint firstItem="TuN-bA-G1w" firstAttribute="centerX" secondItem="FqE-5G-vRp" secondAttribute="centerX" id="GiR-uA-Dfg"/>
+                <constraint firstItem="FqE-5G-vRp" firstAttribute="top" secondItem="2EV-zV-SLy" secondAttribute="bottom" constant="30" id="e4Z-IV-bCG"/>
+                <constraint firstItem="eaO-k8-PyN" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="gXB-tW-F4L"/>
+                <constraint firstItem="TuN-bA-G1w" firstAttribute="top" secondItem="FqE-5G-vRp" secondAttribute="bottom" constant="12" id="kQa-AO-hDO"/>
+                <constraint firstItem="2EV-zV-SLy" firstAttribute="top" secondItem="deK-Ox-hUS" secondAttribute="bottom" constant="20" id="kWx-F7-aq4"/>
+                <constraint firstItem="2EV-zV-SLy" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="51" id="oE7-Ta-6jM"/>
+                <constraint firstItem="FqE-5G-vRp" firstAttribute="centerX" secondItem="2EV-zV-SLy" secondAttribute="centerX" id="oHL-Ju-U52"/>
+                <constraint firstItem="FqE-5G-vRp" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.5" id="pFC-AL-JQS"/>
+                <constraint firstItem="deK-Ox-hUS" firstAttribute="top" secondItem="eaO-k8-PyN" secondAttribute="bottom" constant="20" id="vci-Kf-Eyw"/>
+                <constraint firstItem="TuN-bA-G1w" firstAttribute="trailing" secondItem="FqE-5G-vRp" secondAttribute="trailing" id="w1U-Q8-8In"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="notNowBtn" destination="TuN-bA-G1w" id="pHX-so-dPX"/>
+                <outlet property="updateNowBtn" destination="FqE-5G-vRp" id="F1O-ME-Vnw"/>
+                <outlet property="updateVersionLabel" destination="eaO-k8-PyN" id="zhS-Y2-JcW"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="35.15625"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
