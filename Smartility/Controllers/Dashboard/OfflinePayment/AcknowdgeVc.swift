@@ -12,7 +12,7 @@ import Lottie
 class AcknowdgeVc: UIViewController {
     
     
-    @IBOutlet weak var lotieView: LottieView!
+    @IBOutlet weak var lotieView: UIView!
     @IBOutlet weak var paymentDesctiptionLabel: UILabel!
     @IBOutlet weak var dashBoartBtn: UIButton!
 

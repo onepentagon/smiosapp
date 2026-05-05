@@ -17,7 +17,7 @@ class PaymentTimeoutController: UIViewController {
     @IBOutlet weak var noteSubContainer: UIView!
     @IBOutlet weak var descriptionLabel: UILabel!
     private var progressView: AnimationView?
-    @IBOutlet weak var lotieView: LottieView!
+    @IBOutlet weak var lotieView: UIView!
     
     
     override func viewDidLoad() {

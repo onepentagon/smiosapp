@@ -31,7 +31,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ytA-HK-aqN">
                                         <rect key="frame" x="0.0" y="50" width="375" height="727"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ok6-Vf-Lga" customClass="LottieView" customModule="Lottie">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ok6-Vf-Lga">
                                                 <rect key="frame" x="87.5" y="0.0" width="200" height="200"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
@@ -227,7 +227,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sd1-ML-jxH">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="916.5"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="thv-pd-qlN" customClass="LottieView" customModule="Lottie">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="thv-pd-qlN">
                                                 <rect key="frame" x="87.5" y="50" width="200" height="200"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
@@ -374,7 +374,7 @@ In case of any queries, please reach us out by tapping on "Contact Support" menu
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pXE-uk-nGZ">
                                         <rect key="frame" x="0.0" y="50" width="375" height="753.5"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Moy-rh-saQ" customClass="LottieView" customModule="Lottie">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Moy-rh-saQ">
                                                 <rect key="frame" x="127.5" y="0.0" width="120" height="120"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>

@@ -23,7 +23,7 @@ class FailureController: UIViewController {
     @IBOutlet weak var noteSubContainer: UIView!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var doneBtn: UIButton!
-    @IBOutlet weak var lotieView: LottieView!
+    @IBOutlet weak var lotieView: UIView!
     
     var errorMessageString: String?
     var orderIDString: String?

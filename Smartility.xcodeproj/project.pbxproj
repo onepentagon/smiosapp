@@ -1049,8 +1049,6 @@
 			dependencies = (
 			);
 			name = Smartility;
-			packageProductDependencies = (
-			);
 			productName = Smartility;
 			productReference = 18054CA824B1CF5500FED0FB /* Smartility.app */;
 			productType = "com.apple.product-type.application";
@@ -1080,8 +1078,6 @@
 				Base,
 			);
 			mainGroup = 18054C9F24B1CF5500FED0FB;
-			packageReferences = (
-			);
 			productRefGroup = 18054CA924B1CF5500FED0FB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1167,13 +1163,9 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Smartility/Pods-Smartility-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Smartility/Pods-Smartility-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1188,13 +1180,9 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Smartility/Pods-Smartility-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Smartility/Pods-Smartility-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

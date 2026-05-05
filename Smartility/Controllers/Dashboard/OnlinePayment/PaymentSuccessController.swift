@@ -18,7 +18,7 @@ class PaymentSuccessController: UIViewController {
     @IBOutlet weak var table: UITableView!
     @IBOutlet weak var doneBtn: UIButton!
     @IBOutlet weak var tableHeight: NSLayoutConstraint!
-    @IBOutlet weak var lotieView: LottieView!
+    @IBOutlet weak var lotieView: UIView!
             
     var orderIDString: String?
     var orderIDDate: String?
